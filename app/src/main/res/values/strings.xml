@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">USCDrinkDoor</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="MAPS_API_KEY">"AIzaSyB2y2zZkPVbLTr-QFiEAMcXTspOJDaC5OY"</string>
+
+    // com.example.uscdrinkdoor.Seller Profile:
+    <string name="seller_name">Seller</string>
+    <string name="seller_id">Seller ID:</string>
+    <string name="seller_email">Email</string>
+    <string name="address">Address</string>
+    <string name="menu">Menu</string>
+    <string name="order">Orders</string>
+    <string name="wallet">Wallet</string>
+    <string name="logoff">Sign Off</string>
+
+    // com.example.uscdrinkdoor.User Profile:
+    <string name="user_name">User</string>
+    <string name="phone">Phone</string>
+    <string name="user_email">Email</string>
+    <string name="user_id">User ID:</string>
+    <string name="birthday">Birthday</string>
+    <string name="cart">Cart</string>
+    <string name="caffeine">Caffeine</string>
+
+
+
+</resources>

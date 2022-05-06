@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sellerWallet">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/Wallet"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:paddingTop="100dp"
+            android:text="Wallet"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/walletDescription"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:paddingLeft="5dp"
+            android:text="All time earnings"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/walletRevenue"
+            android:layout_width="match_parent"
+            android:layout_height="398dp"
+            android:padding="20dp"
+            android:text="Revenue: "
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/function"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_below="@id/map">
+
+            <Button
+                android:id="@+id/Home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:backgroundTint="@color/white"
+                android:onClick="clickHome"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/sellerMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:backgroundTint="@color/white"
+                android:onClick="clickMenu"
+                android:text="Menu"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/userOrder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:backgroundTint="@color/white"
+                android:onClick="clickOrder"
+                android:text="Order"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Account_Profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:backgroundTint="@color/white"
+                android:onClick="clickAccount"
+                android:text="Account"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

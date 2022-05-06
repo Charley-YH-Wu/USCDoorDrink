@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.uscdrinkdoor">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.USCDrinkDoor">
+        <activity
+            android:name=".sellerWallet"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDewc_xqcDgxGJNJAEb0D3ipsKtxD3KqOI" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SellerOrderPage"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerOrderPage"
+            android:exported="false" />
+        <activity
+            android:name=".OrderCompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductToMenu"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccount"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Seller_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".User_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SellerMenu"
+            android:exported="false" />
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellerOrderListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerOrderListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChartActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChartActivityWeek"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChartActivityMonth"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

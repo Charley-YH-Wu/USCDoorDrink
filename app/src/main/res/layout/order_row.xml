@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/orderHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Order ID:"
+        />
+
+    <TextView
+        android:id="@+id/orderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderHeading"
+        android:maxLength="50"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="Replace with Order ID"
+        />
+
+    <Button
+        android:id="@+id/View"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/orderID"
+        android:backgroundTint="@color/teal_200"
+        android:text="View Order"
+        android:textColor="@color/black"
+        android:textSize="9sp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/map"
+        android:id="@+id/function"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:backgroundTint="@color/white"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/sellerMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:backgroundTint="@color/white"
+            android:text="Menu"
+            android:onClick="clickMenu"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/userOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Order"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:onClick="clickOrder"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:id="@+id/Account_Profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:onClick="clickAccount"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/walking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Walking"
+        android:onClick="SelectWalking"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/driving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="10dp"
+        android:text="Driving"
+        android:textAllCaps="false"
+        android:onClick="SelectDriving"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/esttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Estimated Delivery time:"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/recommend"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:text="Recommend Me Something"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:onClick="Recommend"
+        />
+
+
+</RelativeLayout>
